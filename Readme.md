@@ -46,7 +46,7 @@
 Он содержит только поля и getter/setter методы для доступа к ним. 
 DTO не содержит бизнес-логики и используется только для передачи данных.
 
-# UserRegistrationDto
+[**`UserRegistrationDto`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto/auth/UserRegistrationDto.java)   
 
 Класс `UserRegistrationDto` используется для передачи данных о регистрации пользователя в системе. Он содержит поля для email, пароля, подтверждения пароля и имени пользователя. Все поля валидируются с использованием аннотаций из библиотеки `javax.validation`.
 
