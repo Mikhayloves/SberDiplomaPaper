@@ -42,7 +42,7 @@
 
 Любая работа с сущностью осуществляеться через ССЫЛКА через DTO.
 
-**DTO (Data Transfer Object)** в Java — это объект, который используется для передачи данных между подсистемами приложения. 
+** [**`DTO`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto) (Data Transfer Object)** в Java — это объект, который используется для передачи данных между подсистемами приложения. 
 Он содержит только поля и getter/setter методы для доступа к ним. 
 DTO не содержит бизнес-логики и используется только для передачи данных.
 
