@@ -118,7 +118,8 @@ DTO не содержит бизнес-логики и используется 
 
 - Если все данные корректны, они будут переданы в сервисный слой для дальнейшей обработки (например, сохранения пользователя в базе данных).
 
-# API Endpoints
+[**`API Endpoints`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/controller)   
+ 
 
 ## Аутентификация ссылка
 - Регистрация: POST /api/auth/registration
