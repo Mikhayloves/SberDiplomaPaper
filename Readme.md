@@ -26,7 +26,7 @@
 
 ### Пользователь (`User`)
 
-Сущность `User` представляет собой модель пользователя в системе. Она включает следующие поля:
+Сущность  [**`User`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/model/User.java) представляет собой модель пользователя в системе. Она включает следующие поля:
 
 - **id** (Long): Уникальный идентификатор пользователя.
 - **name** (String): Имя пользователя.
