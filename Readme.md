@@ -197,7 +197,7 @@ POSTMAN фото
 ## Docker 
 **Docker** - это платформа для разработки, доставки и запуска приложений в контейнерах. Контейнеры - это среда, включающие в себя необходимые зависимости, библиотеки и файлы , что обеспечивает легкость при развертывании приложения на различных машинах.
 
-![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/Докер.png)
+![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/Докер1.png)
 
 
 
