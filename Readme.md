@@ -46,6 +46,10 @@
 - **createdAt** (Timestamp): Время создания пользователя.
 - **updatedAt** (Timestamp): Время последнего обновления пользователя.
 
+### Пример создания:
+![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/users.png)
+
+
 Любая работа с сущностью осуществляеться через [**`DTO`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto)
 
 **DTO (Data Transfer Object)** в Java — это объект, который используется для передачи данных между подсистемами приложения. 
