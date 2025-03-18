@@ -46,7 +46,7 @@
 - **createdAt** (Timestamp): Время создания пользователя.
 - **updatedAt** (Timestamp): Время последнего обновления пользователя.
 
-Любая работа с сущностью осуществляеться через DTO. [**`DTO`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto)
+Любая работа с сущностью осуществляеться через [**`DTO`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto)
 
 **DTO (Data Transfer Object)** в Java — это объект, который используется для передачи данных между подсистемами приложения. 
 Он содержит только поля и getter/setter методы для доступа к ним. 
@@ -54,7 +54,7 @@ DTO не содержит бизнес-логики и используется 
 
 # UserRegistrationDto
 
-Класс `UserRegistrationDto` используется для передачи данных о регистрации пользователя в системе. Он содержит поля для email, пароля, подтверждения пароля и имени пользователя. Все поля валидируются с использованием аннотаций из библиотеки `javax.validation`.
+Класс [**`UserRegistrationDto`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto/auth/UserRegistrationDto.java) используется для передачи данных о регистрации пользователя в системе. Он содержит поля для email, пароля, подтверждения пароля и имени пользователя. Все поля валидируются с использованием аннотаций из библиотеки `javax.validation`.
 
 ---
 
