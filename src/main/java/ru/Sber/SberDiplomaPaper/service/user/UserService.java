@@ -10,7 +10,6 @@ public interface UserService {
 
     User save(User user);
 
-    void updatePassword(Long id, String password);
 
     void updateEnabled(Long id, boolean enabled);
 

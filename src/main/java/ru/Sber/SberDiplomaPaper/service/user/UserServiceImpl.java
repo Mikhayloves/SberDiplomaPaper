@@ -28,10 +28,6 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
-    @Override
-    public void updatePassword(Long id, String password) {
-        //TODO
-    }
 
     @Override
     public void updateEnabled(Long id, boolean enabled) {
