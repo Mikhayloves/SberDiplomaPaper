@@ -119,7 +119,7 @@ DTO не содержит бизнес-логики и используется 
   "email": "example@example.com",
   "password": "password123",
   "passwordConfirm": "password123",
-  "name": "JohnDoe"
+  "name": "Anton"
 }
 ```
 
