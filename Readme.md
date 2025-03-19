@@ -48,10 +48,6 @@
 - **createdAt** (Timestamp): Время создания пользователя.
 - **updatedAt** (Timestamp): Время последнего обновления пользователя.
 
-### Пример создания:
-![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/users.png)
-
-
 Любая работа с сущностью осуществляеться через [**`DTO`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/dto)
 
 **DTO (Data Transfer Object)** в Java — это объект, который используется для передачи данных между подсистемами приложения. 
@@ -108,8 +104,6 @@ DTO не содержит бизнес-логики и используется 
 }
 ```
 
-
-
 ## Пример JSON-представления пользователя:
 
 ```json
@@ -129,6 +123,35 @@ DTO не содержит бизнес-логики и используется 
  - Если данные не соответствуют требованиям (например, email невалидный или пароль слишком короткий), Spring вернет ошибку с соответствующим сообщением.
 
 - Если все данные корректны, они будут переданы в сервисный слой для дальнейшей обработки (например, сохранения пользователя в базе данных).
+
+
+# Защита данных пользователя осуществляеться с помошью JWT Token
+
+Что такое JWT?
+JWT (Json Web Token) — ключ аутентификации пользователя. Используется для запросов к защищенным методам API.
+
+Для чего нужны JWT: чтобы не передавать учетные данные пользователя с каждым запросом к серверу.
+
+Так же в при успешной аутентификации пользователя
+
+Плюсы такого подхода:
+
+- Токены доступа имеют ограниченный срок годности (обычно ~15 минут)
+- Не тратяться дополнительные ресусурсы и время
+
+Токен формируется после успешной аутентификации пользователя, это происходит в методе login контроллера [**`AuthController`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/controller/AuthController.java), а сам token генерируется в классе  [**`JwtServiceImpl`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/jwt/JwtServiceImpl.java)
+Вот как это работает:
+
+Пользователь отправляет запрос на вход (логин), передавая свои учетные данные (email и пароль).
+
+Сервер проверяет учетные данные:
+
+Если данные верны, сервер вызывает метод generateAccessToken (и generateRefreshToken, если используется) для создания JWT токена.
+
+Токен возвращается клиенту в ответе на запрос. 
+
+### Пример создания:
+![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/users.png)
 
 #  [**`API Endpoints`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/controller)
 
