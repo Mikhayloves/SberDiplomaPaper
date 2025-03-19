@@ -30,7 +30,7 @@
 
 ## Структура проекта:
 
-![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/2025-03-19_13-13-42.png)
+![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/2025-03-19_13-47-24.png)
 
 В данном проекте представлена архитектура с тремя основными уровнями.
 
