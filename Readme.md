@@ -28,7 +28,24 @@
 
 Напримере проекта все поднимаеться в [**`Docker`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/docker/db/compose.yml) в файле compose.yml
 
-## Схема связи между сущностями
+## Структура проекта:
+
+В данном проекте представлена архитектура с тремя основными уровнями.
+
+1. Контроллеры (Controller): 
+   - Они находятся в пакете  [**`controller`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/controller)
+   - Этот уровень отвечает за обработку HTTP-запросов и отправку ответов клиентам. Контроллеры получают данные от клиента, отправляют их на бизнес-логику и передают обратно результат.
+
+2. Сервисный слой (Service):
+   - Реализован в пакете  [**`service`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/service)
+   - Здесь выполняется основная бизнес-логика приложения. Сервисы обрабатывают данные, полученные от контроллеров, взаимодействуют с репозиториями для получения или изменения данных и возвращают результат обратно контроллерам.
+
+3. Уровень доступа к данным (Repository):
+   - Находится в пакете [**`repository`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/repository)
+   - Этот уровень отвечает за взаимодействие с базой данных. Репозитории предоставляют интерфейсы для выполнения CRUD-операций и поиска данных.
+
+
+## Проектирование БД
 
 ![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/Таблица.png)
 
@@ -135,7 +152,7 @@ DTO не содержит бизнес-логики и используется 
 
 Позволяет пользователю активировать учетную запись, переходя по ссылке из письма. 
 
-Пример работы системы
+Пример работы системы:
 
 ### 1. Пользователь регистрируется:
 
