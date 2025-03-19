@@ -151,7 +151,7 @@ JWT (Json Web Token) — ключ аутентификации пользова�
 
 Токен возвращается клиенту в ответе на запрос. 
 
-### Пример создания:
+### Пример создания User:
 ![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/users.png)
 
 #  [**`API Endpoints`**](https://github.com/Mikhayloves/SberDiplomaPaper/tree/main/src/main/java/ru/Sber/SberDiplomaPaper/controller)
