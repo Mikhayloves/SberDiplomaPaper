@@ -143,14 +143,14 @@ DTO не содержит бизнес-логики и используется 
 
 ### 2. Формирование письма:
 
-В  ## [**` RegistrationMailGenerator`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/mail/RegistrationMailGenerator.java) создается HTML-шаблон письма
+В  [**` RegistrationMailGenerator`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/mail/RegistrationMailGenerator.java) создается HTML-шаблон письма
 
 ### 3. Отправка письма:
 
 В   [**`EmailSenderServiceImpl`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/mail/EmailSenderServiceImpl.java) вызывается метод sendEmail
 
 Отправка на почту: 
-![photo_2025-02-14_11-49-19.jpg]([https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/users.png](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/2025-03-19_12-39-18.png)
+![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/2025-03-19_12-39-18.png)
 
 # Защита данных пользователя осуществляеться с помошью JWT Token
 
