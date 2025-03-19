@@ -26,7 +26,7 @@
 - Установленная **PostgreSQL**.
 - Настройте почтовый сервис (например, Yandex или Gmail) для отправки писем.
 
-Напримере проекта все поднимаеться в [**`Docker`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/docker/db/compose.yml в файле compose.yml)
+Напримере проекта все поднимаеться в [**`Docker`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/docker/db/compose.yml) в файле compose.yml
 
 ## Схема связи между сущностями
 
