@@ -26,13 +26,15 @@
 - Установленная **PostgreSQL**.
 - Настройте почтовый сервис (например, Yandex или Gmail) для отправки писем.
 
+Напримере проекта все поднимаеться в [**`Docker`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/docker/db/compose.yml в файле compose.yml)
+
 ## Схема связи между сущностями
 
 ![photo_2025-02-14_11-49-19.jpg](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/Таблица.png)
 
 ### Пользователь (`User`)
 
-Сущность `User` представляет собой модель пользователя в системе. Она включает следующие поля:
+Сущность [**`User`**]( https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/domain/model/User.java) представляет собой модель пользователя в системе. Она включает следующие поля:
 
 - **id** (Long): Уникальный идентификатор пользователя.
 - **name** (String): Имя пользователя.
