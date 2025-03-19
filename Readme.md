@@ -120,10 +120,37 @@ DTO не содержит бизнес-логики и используется 
 ```
 
 ## Что происходит при валидации:
- - Если данные не соответствуют требованиям (например, email невалидный или пароль слишком короткий), Spring вернет ошибку с соответствующим сообщением.
+
+- Если данные не соответствуют требованиям (например, email невалидный или пароль слишком короткий), то метод контроллера генерирует соответствующие исключение.
 
 - Если все данные корректны, они будут переданы в сервисный слой для дальнейшей обработки (например, сохранения пользователя в базе данных).
 
+### Для подтверждениz регистрации пользователя JavaMailSender.
+
+Система Mail в проекте:
+
+Используется для отправки писем с подтверждением регистрации.
+
+Связана с процессом регистрации через генерацию токенов и отправку писем.
+
+Позволяет пользователю активировать учетную запись, переходя по ссылке из письма. 
+
+Пример работы системы
+
+### 1. Пользователь регистрируется:
+
+Вызывается метод register в AuthServiceImpl [**`AuthServiceImpl`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/auth/AuthServiceImpl.java)
+
+### 2. Формирование письма:
+
+В  ## [**` RegistrationMailGenerator`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/mail/RegistrationMailGenerator.java) создается HTML-шаблон письма
+
+### 3. Отправка письма:
+
+В   [**`EmailSenderServiceImpl`**](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/src/main/java/ru/Sber/SberDiplomaPaper/service/mail/EmailSenderServiceImpl.java) вызывается метод sendEmail
+
+Отправка на почту: 
+![photo_2025-02-14_11-49-19.jpg]([https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/users.png](https://github.com/Mikhayloves/SberDiplomaPaper/blob/main/photo/2025-03-19_12-39-18.png)
 
 # Защита данных пользователя осуществляеться с помошью JWT Token
 
